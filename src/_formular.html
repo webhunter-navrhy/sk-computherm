@@ -1,0 +1,17 @@
+{# Formulár na dopyt. Endpoint a demo režim z _data/site.json (formular.endpoint, formular.demo). #}
+<form class="formular" method="post" {% if site.formular.endpoint and not site.formular.demo %}action="{{ site.formular.endpoint }}"{% endif %} data-endpoint="{{ site.formular.endpoint }}" data-demo="{{ 1 if site.formular.demo or not site.formular.endpoint else 0 }}">
+  <div class="dva">
+    <label>Firma <input name="firma" autocomplete="organization"></label>
+    <label>Meno a priezvisko <input name="meno" autocomplete="name" required></label>
+  </div>
+  <div class="dva">
+    <label>E-mail <input name="email" type="email" autocomplete="email" required></label>
+    <label>Telefón <input name="telefon" type="tel" autocomplete="tel"></label>
+  </div>
+  <label>Čo Vás zaujíma <textarea name="sprava" rows="4" required placeholder="Napríklad typ predajne alebo realizácií a o aké produkty máte záujem."></textarea></label>
+  <label class="suhlas"><input type="checkbox" name="suhlas" required> Súhlasím so spracovaním osobných údajov na účel vybavenia dopytu.</label>
+  <div class="past" aria-hidden="true"><label>Nevyplňovať <input name="_gotcha" tabindex="-1" autocomplete="off"></label></div>
+  <input type="hidden" name="_subject" value="{{ site.formular.predmet }}">
+  <button type="submit">Odoslať dopyt</button>
+  <p class="formular-stav" role="status" aria-live="polite"></p>
+</form>

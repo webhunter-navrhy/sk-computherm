@@ -1,0 +1,105 @@
+{% extends "_base.html" %}
+{% set titulek = 'Termostaty a vykurovacia technika Computherm | Dunajská Streda' %}
+{% set cesta = '' %}
+{% block obsah %}
+<section class="hero">
+  <div class="wrap hero-mriezka">
+    <div class="hero-text">
+      <p class="stitok">Oficiálny distribútor značky Computherm</p>
+      <h1>Termostaty a vykurovacia technika</h1>
+      <p class="lead">Izbové a Wi-Fi termostaty, čerpadlá, rozdeľovače a elektrické vykurovanie. Tovar dodávame zo skladu hneď po prijatí objednávky.</p>
+      <p class="tlacidla"><a class="tl tl-hlavne" href="#produkty">Prehľad produktov</a> <a class="tl" href="#velkoodberatelia">Pre veľkoodberateľov</a></p>
+    </div>
+    <div class="zony-vizual">
+      <p class="zony-vyzva" id="zony-vyzva">Ako funguje zónová regulácia: kliknite na miestnosť</p>
+      <div class="zony-plan" role="group" aria-labelledby="zony-vyzva">
+        <button type="button" data-zona="1" aria-pressed="true">Obývačka</button>
+        <button type="button" data-zona="2" aria-pressed="false">Kuchyňa</button>
+        <button type="button" data-zona="3" aria-pressed="true">Spálňa</button>
+        <button type="button" data-zona="4" aria-pressed="false">Detská izba</button>
+      </div>
+      <div class="zony-stav"><span class="kotol-stav"></span><span class="zony-pocet"></span></div>
+    </div>
+  </div>
+  <div class="rura" aria-hidden="true"><i class="privod"></i><i class="spiatocka"></i></div>
+</section>
+
+<section class="dovera">
+  <div class="wrap"><ul role="list" class="dovera-zoznam">
+    <li><strong>Od roku 2009</strong> oficiálny distribútor značky Computherm pre Slovensko a Českú republiku</li>
+    <li><strong>Zo skladu</strong> dodávame ihneď po prijatí objednávky</li>
+    <li><strong>Dunajská Streda</strong> Po–Pi 8:00–16:00, So 9:00–12:00</li>
+  </ul></div>
+</section>
+
+<section class="sekce" id="produkty">
+  <div class="wrap">
+    <div class="sek-hlava">
+      <h2>Produkty</h2>
+      <p>Celý sortiment od izbového termostatu po prečerpávaciu stanicu.</p>
+    </div>
+    {% for g in data.produkty %}
+    <div class="skupina">
+      <h3 class="skupina-nadpis"><span>{{ g.skupina }}</span></h3>
+      <ul role="list" class="dlazdice s{{ g.stlpce }}">
+        {% for p in g.polozky %}
+        <li class="{{ 'siroka' if p.siroka else '' }}{{ ' maly' if p.maly else '' }}">
+          <div class="d-foto">{{ img(p.foto, p.nazev ~ ' Computherm', sizes='(min-width: 64rem) 14rem, 44vw', eager=False) }}</div>
+          <div class="d-text"><h4>{% if p.slug %}<a href="https://www.computherm.sk/{{ p.slug }}" rel="noopener">{{ p.nazev }}</a>{% else %}{{ p.nazev }}{% endif %}</h4>
+          {% if p.popis %}<p>{{ p.popis }}</p>{% endif %}</div>
+        </li>
+        {% endfor %}
+      </ul>
+    </div>
+    {% endfor %}
+    <div class="katalog">
+      <div class="katalog-obal">{{ img('katalog.jpg', 'Titulná strana katalógu vykurovacej techniky Computherm 2025', sizes='11rem', eager=False) }}</div>
+      <div>
+        <h3>Katalóg vykurovacej techniky 2025</h3>
+        <p>Brožúra s kompletným radom produktov vo formáte PDF.</p>
+        <p><a class="tl tl-hlavne" href="https://computherm.sk/ct.pdf" rel="noopener">Stiahnuť katalóg</a></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sekce sek-zony" id="zony">
+  <div class="wrap zony-mriezka">
+    <div class="zony-text">
+      <h2>Vykurujte len tie miestnosti, ktoré práve používate</h2>
+      <p>Zónový termostat rozdelí vykurovací systém na zóny. Prijímač riadi kotol a otvára a zatvára zónové ventily, takže nemusíte ťahať vedenie od každej izby ku kotlu. Ak má kotol len jednu prípojku na izbový termostat, viac termostatov pripojíte cez zónový regulátor.</p>
+      <p>Naším vývojom sú bezdrôtový multizónový termostat (4 zóny) a multizónový Wi-Fi termostat, ktorý z diaľky ovláda až 8 vykurovacích zón.</p>
+      <p>Wi-Fi termostaty dokážu ovládať vykurovanie bytu, domu aj chaty na diaľku cez internet. Niektoré sú vhodné aj na ovládanie garážových brán, dverí či zavlažovania.</p>
+      <p><a class="tl" href="https://www.computherm.sk/sites/default/files/computherm_q4z-q8rf_prospektus_2015_sk.pdf" rel="noopener">Brožúra Q4Z a Q8RF (PDF)</a></p>
+    </div>
+    <div class="zony-foto">{{ img('wifi.png', 'Wi-Fi termostat Computherm s displejom a mobilnou aplikáciou', sizes='(min-width: 64rem) 36rem, 100vw', eager=False) }}</div>
+  </div>
+</section>
+
+<section class="sekce" id="velkoodberatelia">
+  <div class="wrap dopyt-mriezka">
+    <div>
+      <h2>Veľkoodberatelia</h2>
+      <p>Ak ste distribútor, špecializovaná predajňa alebo realizátor vykurovania a zaujímajú Vás naše výrobky, napíšte nám. Partnerom poskytujeme veľmi výhodné ceny a podmienky.</p>
+      <p>Objednaný tovar dodávame ihneď po prijatí objednávky z veľkých a neustále udržiavaných skladových zásob.</p>
+    </div>
+    <div>{% include "_formular.html" %}</div>
+  </div>
+</section>
+
+<section class="sekce sek-kontakt" id="kontakt">
+  <div class="wrap kontakt-mriezka">
+    <div class="kontakt-uvod">
+      <h2>O nás a kontakt</h2>
+      <p>COMPUTHERM Slovakia s.r.o. začala činnosť na Slovensku na konci roka 2009 ako oficiálny distribútor termostatov značky Computherm, pre Slovensko a Českú republiku.</p>
+      <p>V ponuke máme termostaty mechanické, digitálne, programovateľné, multizónové, Wi-Fi aj pre fan-coil, k tomu armatúry, obehové čerpadlá, prečerpávacie stanice a elektrické vykurovacie systémy.</p>
+    </div>
+    <dl class="kontakt-zoznam">
+      <div><dt>Adresa</dt><dd>COMPUTHERM Slovakia s.r.o.<br>Nezábudková 471<br>929 01 Dunajská Streda</dd></div>
+      <div><dt>Telefón</dt><dd><a href="tel:{{ site.kontakt.telefon|replace(' ', '') }}">{{ site.kontakt.telefon }}</a></dd></div>
+      <div><dt>E-mail</dt><dd><a href="mailto:{{ site.kontakt.email }}">{{ site.kontakt.email }}</a></dd></div>
+      <div><dt>Otváracie hodiny</dt><dd>Pondelok až piatok 8:00–16:00<br>Sobota 9:00–12:00</dd></div>
+    </dl>
+  </div>
+</section>
+{% endblock %}

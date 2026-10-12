@@ -1,0 +1,135 @@
+[
+ {
+  "skupina": "Regulácia",
+  "ikona": "r",
+  "polozky": [
+   {
+    "nazev": "Mechanické termostaty",
+    "foto": "mechanicke.jpg",
+    "slug": "mechanicke-termostaty",
+    "popis": "Bez batérií a bez vonkajšieho napájania.",
+    "siroka": false,
+    "maly": false
+   },
+   {
+    "nazev": "Digitálne termostaty",
+    "foto": "digitalne.jpg",
+    "slug": "digitalne-termostaty",
+    "popis": "Presné nastavenie a zobrazenie teploty v izbe.",
+    "siroka": false,
+    "maly": false
+   },
+   {
+    "nazev": "WiFi termostaty",
+    "foto": "wifi.png",
+    "slug": "wifi-termostaty",
+    "popis": "Ovládanie z mobilu, tabletu alebo notebooku odkiaľkoľvek.",
+    "siroka": false,
+    "maly": false
+   },
+   {
+    "nazev": "Digitálne regulátory čerpadiel",
+    "foto": "regulatory.png",
+    "slug": "digitalne-regulatory-cerpadiel",
+    "popis": "",
+    "siroka": false,
+    "maly": true
+   },
+   {
+    "nazev": "Ovládanie plynového konvektora",
+    "foto": "konvektor.png",
+    "slug": "ovladanie-plynoveho-konvektora",
+    "popis": "",
+    "siroka": false,
+    "maly": false
+   },
+   {
+    "nazev": "Digitálne motorové servopohony",
+    "foto": "servo.png",
+    "slug": "digitalne-motorove-servopohony",
+    "popis": "",
+    "siroka": false,
+    "maly": false
+   }
+  ],
+  "stlpce": 3
+ },
+ {
+  "skupina": "Rozvod a armatúry",
+  "ikona": "a",
+  "polozky": [
+   {
+    "nazev": "Radiátorové ventily",
+    "foto": "ventily.png",
+    "slug": "radiatorove-ventily",
+    "popis": "",
+    "siroka": false,
+    "maly": false
+   },
+   {
+    "nazev": "Rozdeľovač – zberač",
+    "foto": "rozdelovac.jpg",
+    "slug": "rozdelovac-zberac",
+    "popis": "",
+    "siroka": false,
+    "maly": false
+   },
+   {
+    "nazev": "Plastový rozdeľovač – zberač",
+    "foto": "plast.png",
+    "slug": "plastovy-rozdelovac-zberac",
+    "popis": "",
+    "siroka": false,
+    "maly": false
+   },
+   {
+    "nazev": "Čerpadlo",
+    "foto": "cerpadlo.png",
+    "slug": "cerpadlo",
+    "popis": "",
+    "siroka": false,
+    "maly": false
+   },
+   {
+    "nazev": "Hydraulický vyrovnávač",
+    "foto": "vyrovnavac.png",
+    "slug": "hydraulicky-vyrovnavac",
+    "popis": "",
+    "siroka": false,
+    "maly": false
+   },
+   {
+    "nazev": "Prečerpávacie stanice",
+    "foto": "stanice.jpg",
+    "slug": "precerpavacia-stanica",
+    "popis": "",
+    "siroka": false,
+    "maly": false
+   },
+   {
+    "nazev": "Magnetický odlučovač kalu",
+    "foto": "odlucovac.png",
+    "slug": "magneticky-odlucovac-kalu",
+    "popis": "",
+    "siroka": false,
+    "maly": false
+   }
+  ],
+  "stlpce": 4
+ },
+ {
+  "skupina": "Elektrické vykurovanie",
+  "ikona": "e",
+  "polozky": [
+   {
+    "nazev": "Elektrické podlahové vykurovanie",
+    "foto": "elektricke.png",
+    "slug": "uspora-elektrickej-energie-komfort",
+    "popis": "Vykurovacie káble, rohože a fólie pre energeticky úsporné vykurovanie.",
+    "siroka": true,
+    "maly": false
+   }
+  ],
+  "stlpce": 4
+ }
+]

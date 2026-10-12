@@ -1,0 +1,14 @@
+{
+  "znamka": 8,
+  "slabiny": [
+    "Sekce Elektrické vykurovanie (PC 1440 a mobil 390): karta už jde přes celou šířku, ale fotka kabelů a rohoží pořád plave malá uprostřed šedé poloviny. Na PC zabírá asi třetinu plochy a na mobilu je kolem ní šedý blok. Oprava: fotku v levé polovině dát přes celou výšku karty (object-fit: cover, ořez zblízka na rohož a kabel, nejvýš 1,3× zdroje). Když zdroj nestačí, levou polovinu zúžit na 40 % a zmenšit padding, ať šedá plocha nepřevažuje. Na mobilu fotku na celou šířku s poměrem 4:3.",
+    "Hero vpravo (PC) a pod tlačítky (mobil): plánek zón jsou čtyři obdélníky s růžovou výplní a tenkými popisky. Působí jako wireframe („obdélníčky“, které Rafael už odmítl) a v první obrazovce chybí jediný skutečný produkt. Oprava: z gridu udělat půdorys bytu (tlustší obvodová zeď, mezery jako dveře, v každé místnosti malý displej termostatu s teplotou, např. 21,5 °C / vypnuté). Vedle nebo přes roh plánku dát packshot Wi-Fi termostatu (wifi.png) jako ovladač, který zóny řídí. Popisek „Kotol beží“ zvětšit na čitelných 14 px.",
+    "Sekce Produkty, úvodní odstavec: věta „Podrobnosti ku každej skupine sú na doterajšom webe computherm.sk“ v návrhu nového webu přiznává, že nový web nic neřeší, a posílá zákazníka na starý. U distributora s katalogem to podráží celý redesign (poučení Sklozam: rozcestník a podstránky). Oprava: větu smazat, karty prolinkovat na podstránky skupin a aspoň jednu ukázkovou podstránku vyrobit (např. WiFi termostaty: packshot, popis z computherm.sk, odkaz na brožuru PDF a tlačítko Dopyt). Ostatní karty můžou vést na ni nebo na formulář."
+  ],
+  "silne": [
+    "Předchozí kolo je zapracované: QA je zelená (0 chyb, nic nepřetéká na 6 šířkách, 0,6 MB), hlavička je plná bílá, takže pod ní nic neprosvítá, a O nás je spojené s Kontaktem do jedné tmavomodré patičky s adresou, e-mailem a otvírací dobou.",
+    "Oborový koncept drží: klikací zónová regulace v hero navazuje na sekci „Vykurujte len tie miestnosti, ktoré práve používate“ s reálným textem o Q4Z/Q8RF a odkazem na brožuru. Návštěvník do 5 s pozná, že jde o termostaty a vytápěcí techniku ze skladu v Dunajskej Strede.",
+    "Brand a řemeslo: logo CompuTherm vlevo a ostré, paleta červená, navy a světle modrá z loga, jedno písmo (Archivo) s čistou diakritikou. Katalog je rozdělený do skupin s čistými packshoty na jednotném světle šedém podkladu, Veľkoodberatelia mají vlastní formulář a na mobilu jsou karty ve 2 sloupcích a dotykové cíle dostatečně velké. Žádné marquee, číslování ani vymyšlená čísla."
+  ],
+  "verdikt": "odeslat: minulé výtky jsou opravené a čistý brandový B2B/B2C katalog s oborovým nápadem je na hranici 8. Před odesláním doporučuji ještě dotáhnout fotku v Elektrickom vykurovaní a odstranit odkaz na starý web. (brief.json ve složce chybí, fakta jsem ověřil podle _data/site.json a minulého review.)"
+}

@@ -1,0 +1,56 @@
+{
+  "slug": "sk-computherm",
+  "nazev": "Computherm Slovakia s.r.o.",
+  "url": "https://webhunter-navrhy.github.io/sk-computherm/",
+  "base": "/sk-computherm/",
+  "lang": "sk",
+  "popis": "Oficiálny distribútor termostatov Computherm na Slovensku: izbové a Wi-Fi termostaty, čerpadlá, rozdeľovače a elektrické vykurovanie zo skladu v Dunajskej Strede.",
+  "navrh": true,
+  "domena": "",
+  "og_image": "digitalne.jpg",
+  "logo": "logo.svg",
+  "theme_color": "#ffffff",
+  "typ": "Organization",
+  "ico": "45259640",
+  "kontakt": {
+    "email": "info@computherm.sk",
+    "telefon": "+421 918 118 902",
+    "adresa": {
+      "ulice": "Nezábudková 471",
+      "psc": "929 01",
+      "mesto": "Dunajská Streda",
+      "zeme": "SK"
+    }
+  },
+  "oteviraci_doba": [
+    "Mo-Fr 08:00-16:00",
+    "Sa 09:00-12:00"
+  ],
+  "sameas": [
+    "https://www.facebook.com/Computherm-Slovakia-743380749072754/"
+  ],
+  "cenove_rozpeti": "",
+  "formular": {
+    "endpoint": "",
+    "demo": true,
+    "predmet": "Dopyt z webu computherm.sk"
+  },
+  "nav": [
+    {
+      "text": "Produkty",
+      "href": "#produkty"
+    },
+    {
+      "text": "Zónová regulácia",
+      "href": "#zony"
+    },
+    {
+      "text": "Veľkoodberatelia",
+      "href": "#velkoodberatelia"
+    },
+    {
+      "text": "Kontakt",
+      "href": "#kontakt"
+    }
+  ]
+}
